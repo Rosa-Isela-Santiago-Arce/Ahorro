@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class CalculadoraAhorros {
+
+    public static void main(String[] args) {
+        // Crear un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario que ingrese el monto de ahorro semanal
+        System.out.print("Ingrese la cantidad que ahorrará cada semana: ");
+        double ahorroSemanal = scanner.nextDouble();
+
+        // Solicitar al usuario que ingrese el número de semanas
+        System.out.print("Ingrese el número de semanas que planea ahorrar: ");
+        int numeroSemanas = scanner.nextInt();
+
+        // Calcular el total de ahorros
+        double totalAhorros = ahorroSemanal * numeroSemanas;
+
+        // Mostrar el resultado al usuario
+        System.out.println("El total de ahorros después de " + numeroSemanas + " semanas será: $" + totalAhorros);
+
+        // Cerrar el scanner
